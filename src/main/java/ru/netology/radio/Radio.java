@@ -14,15 +14,12 @@ public class Radio {
         amountRadioStation = 10;
     }
 
-    public int getAmountRadioStation() {
-        return amountRadioStation;
+    public Radio(int amountRadioStation) {
+        this.maxRadioStation = amountRadioStation - 1;
     }
 
-    public Radio(int currentRadioStation, int amountRadioStation, int currentVolume, int maxVolume) {
-        this.currentRadioStation = currentRadioStation;
-        this.maxRadioStation = amountRadioStation - 1;
-        this.currentVolume = currentVolume;
-        this.maxVolume = maxVolume;
+    public int getAmountRadioStation() {
+        return amountRadioStation;
     }
 
     public int getCurrentRadioStation() {
